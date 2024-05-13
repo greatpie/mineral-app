@@ -9,7 +9,6 @@ const pkPath = "pk.txt";
 async function generate(index: number) {
     try {
         const derivePath = `m/44'/784'/1'/0'/${index}'`
-        console.log(derivePath)
         const wallet = Ed25519Keypair.deriveKeypair(mnemonics, derivePath);
         console.log(chalk.green("Wallet created:"), wallet.toSuiAddress());
         console.log(chalk.red("Private key:"), wallet.getSecretKey());
