@@ -3,3 +3,8 @@ elm-stuff
 
 address.txt
 pk.txt
+
+# env
+.env
+.env.development
+.env.local
